@@ -1,0 +1,29 @@
+*{
+    background: whitesmoke;
+}
+
+
+.h1{
+   color: black;
+    font-weight:bold ;
+    font-size: medium;
+
+}
+.nav{
+    color: rgba(32, 31, 31, 0.266);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 200;
+
+
+}
+.nav:hover{
+    color: rgba(204, 8, 8, 0.588);
+
+}
+.nav:form{
+    display: flex;
+    color: rgb(46, 44, 44);
+}
