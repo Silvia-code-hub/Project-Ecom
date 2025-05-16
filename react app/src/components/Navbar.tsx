@@ -1,7 +1,36 @@
+import { useState } from 'react';   
 import './Navbar.module.css';
 import '@fortawesome/react-fontawesome';
 
-<h1>Hekto</h1>
+const NavigationDropdown = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    };
+    return (
+    <div className="navigation-dropdown">
+      <button onClick={toggleDropdown}>
+        Navigation
+      </button>
+      <h1>Hekto</h1>;
+
+      <div className={`dropdown-content ${isOpen ? 'open' : ''}`}>
+        <a href="#">Home</a>
+        <a href="#">Pages</a>
+        <a href="#">Products</a>
+        <a href="#">Blog</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact Us</a>
+        
+      </div>
+    </div>
+  );
+};
+
+export default NavigationDropdown;
+
+/*<h1>Hekto</h1>
 function Navbar(){
     return (
         
@@ -22,4 +51,4 @@ function Navbar(){
         </nav>
     )
 }
-export default Navbar;
+export default Navbar;*/
